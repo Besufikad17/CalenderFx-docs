@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>CalenderFx</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Docs";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> CalenderFx</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Docs</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#abushakirjs">AbushakirJs (ባሕረ ሃሳብ)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#client-implementations">Client Implementations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#http-methods">HTTP Methods</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#end-points">End-points</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#user">User</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#calenderfx-api">Calenderfx-API</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#admin">Admin</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">CalenderFx</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Docs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="calenderfx">CalenderFx</h1>
+<h2 id="introduction">Introduction</h2>
+<p>CalenderFx is open-source api built for the purpose of integrating Ethiopian calender system based on npm package called <a href="" title="https://www.npmjs.com/package/abushakir">abushakir-js</a> </p>
+<p>Base API path: https://calenderfx-backend.herokuapp.com/api/
+<br><br></p>
+<h3 id="abushakirjs">AbushakirJs (ባሕረ ሃሳብ)</h3>
+<p>"Bahire Hasab /'bəhrɛ həsəb'/ " simply means "An age with a descriptive and chronological number". In some books it can also be found as "Hasabe Bahir", in a sense giving time an analogy, resembling a sea.</p>
+<p>The words Bahire Hasab originate from the ancient language of Ge'ez, ( Arabic: Abu Shakir) is a time-tracking method, devised by the 12th pope of Alexandria, Pope St. Dimitri.</p>
+<p>This package allows developers to implement Ethiopian Calendar and Datetime System in their application(s)`.</p>
+<p>This package is implemented using the UNIX EPOCH which means it's not a conversion of any other calendar system into Ethiopian, for instance, Gregorian Calendar.</p>
+<p>Unix Epoch is measured using milliseconds since 01 Jan, 1970 UTC. In UNIX EPOCH leap seconds are ignored.</p>
+<p><br></p>
+<h2 id="client-implementations">Client Implementations</h2>
+<p>JSON:API has a great advantage in that since its standardised, API-agnostic tools can be made to abstract away the semantics of consuming and working with the data. It is recommended that you use a JSON:API client to implement the Kitsu API for this reason.</p>
+<p>Many implementations in over 13 languages can be found on the <a href="http://jsonapi.org/implementations/#client-libraries">JSON:API website</a>.<br><br></p>
+<h3 id="http-methods">HTTP Methods</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GET</td>
+<td>Fetch - retrieve resources</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>Create - create new resource</td>
+</tr>
+</tbody>
+</table>
+<h3 id="end-points">End-points</h3>
+<h4 id="user"><b>User</b></h4>
+<p>This collection of end-points consists of requests to post, get and update user data.</p>
+<table>
+<thead>
+<tr>
+<th>End-point</th>
+<th>Method</th>
+<th>Description</th>
+<th>Body</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/signup</td>
+<td>POST</td>
+<td>signing new user</td>
+<td><code>{ username, email, password, purpose }</code></td>
+</tr>
+<tr>
+<td>/login</td>
+<td>POST</td>
+<td>logging to existing account</td>
+<td><code>{ username, password }</code></td>
+</tr>
+<tr>
+<td>/update</td>
+<td>PUT</td>
+<td>updating username and password)</td>
+<td><code>{ newUsername, email, newPassword }</code></td>
+</tr>
+</tbody>
+</table>
+<p><u>Response</u></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><code>{ token, user : { username, email, password, api_key, role } }</code></td>
+</tr>
+<tr>
+<td>400</td>
+<td><code>{ msg: "Please enter all fields" }</code> <code>{ msg: "user exists" }</code> <code>{ msg: "user doesn't exist" }</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="calenderfx-api"><b>Calenderfx-API</b></h4>
+<p>This collection of end-points consists of requests to use basic functions of CalendarFx.</p>
+<table>
+<thead>
+<tr>
+<th>End-point</th>
+<th>Method</th>
+<th>Description</th>
+<th>Body</th>
+<th>Params</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/api/toEC</td>
+<td>POST</td>
+<td>converting GC to EC</td>
+<td><code>{ year, month, day }</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/toGeez</td>
+<td>GET</td>
+<td>converting arabic number to geez</td>
+<td><code>{ number }</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getHolidays</td>
+<td>GET</td>
+<td>getting holidays</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getTheCurrentDate</td>
+<td>GET</td>
+<td>getting the current date</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getNextYear</td>
+<td>GET</td>
+<td>getting the next year</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getPreviousYear</td>
+<td>GET</td>
+<td>getting the previous year</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getNextMonth</td>
+<td>GET</td>
+<td>getting the next month</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getPreviousMonth</td>
+<td>GET</td>
+<td>getting the previous month</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+<tr>
+<td>/api/getEvange</td>
+<td>GET</td>
+<td>getting evange</td>
+<td><code>{}</code></td>
+<td>api_key</td>
+</tr>
+</tbody>
+</table>
+<h4 id="admin"><b>Admin</b></h4>
+<p>This collection of end-points consists of requests to get and delete user by the adminstrator .</p>
+<table>
+<thead>
+<tr>
+<th>End-point</th>
+<th>Method</th>
+<th>Description</th>
+<th>Body/ Param</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/users</td>
+<td>POST</td>
+<td>getting all the users</td>
+<td><code>{}</code></td>
+</tr>
+<tr>
+<td>/user/:id</td>
+<td>POST</td>
+<td>getting user by id</td>
+<td><code>id</code></td>
+</tr>
+<tr>
+<td>/user/:username</td>
+<td>PUT</td>
+<td>getting user by username</td>
+<td><code>username</code></td>
+</tr>
+<tr>
+<td>/user/remove</td>
+<td>Delete</td>
+<td>removing user</td>
+<td><code>{ id }</code></td>
+</tr>
+</tbody>
+</table>
+<p><u>Headers</u></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td>x-auth-token</td>
+<td>token</td>
+</tr>
+</tbody>
+</table>
+<p><u>Response</u></p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><code>{ username, email, password, api_key, role, registerd_at, requests }</code></td>
+</tr>
+<tr>
+<td>400</td>
+<td><code>{ msg: "Please enter all fields" }</code> <code>{ msg: "user doesn't exist" }</code></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.2.3
+Build Date UTC : 2022-03-06 17:06:44.537800+00:00
+-->
