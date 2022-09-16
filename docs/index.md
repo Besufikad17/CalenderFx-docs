@@ -4,7 +4,9 @@
 
 CalenderFx is open-source api built for the purpose of integrating Ethiopian calender system based on npm package called [abushakir-js]('https://www.npmjs.com/package/abushakir') 
 
-Base API path: https://calenderfx-backend.herokuapp.com/api/
+Inorder to integrate CalenderFx to your app register in [CalenderFx homepage]('https://calenderfx-client.onrender.com/') to get API key and make sure to read the HTTPS methods and implementation instructions listed below.
+
+Base API path: https://calenderfx-api.onrender.com
 <br><br>
 
 ### AbushakirJs (ባሕረ ሃሳብ)
