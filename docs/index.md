@@ -68,14 +68,14 @@ This collection of end-points consists of requests to use basic functions of Cal
 | End-point | Method | Description                     | Body | Params |
 | --------- | ------ | ------------------------------- | ---- | ------ |
 | /api/toEC   | POST   | converting GC to EC |    ```{ year, month, day }```     | api_key |
-| /api/toGeez    | GET | converting arabic number to geez |  ```{ number }``` | api_key |
-| /api/getHolidays   |  GET   | getting holidays | ```{}``` | api_key |
-| /api/getTheCurrentDate   | GET    | getting the current date | ```{}``` | api_key |
-| /api/getNextYear   | GET    | getting the next year  | ``` {} ```    | api_key |
-| /api/getPreviousYear  | GET    | getting the previous year | ``` {} ```    | api_key |
-| /api/getNextMonth  | GET    | getting the next month | ``` {} ```    | api_key |
-| /api/getPreviousMonth  | GET    | getting the previous month | ``` {} ```    | api_key |
-| /api/getEvange   | GET    | getting evange | ``` {} ```    | api_key |
+| /api/to_geez    | GET | converting arabic number to geez |  ```{ number }``` | api_key |
+| /api/holidays   |  GET   | getting holidays | ```{}``` | api_key |
+| /api/current   | GET    | getting the current date | ```{}``` | api_key |
+| /api/next_year   | GET    | getting the next year  | ``` {} ```    | api_key |
+| /api/previous_year  | GET    | getting the previous year | ``` {} ```    | api_key |
+| /api/next_month  | GET    | getting the next month | ``` {} ```    | api_key |
+| /api/previous_month  | GET    | getting the previous month | ``` {} ```    | api_key |
+| /api/evange   | GET    | getting evange | ``` {} ```    | api_key |
 
 #### <b>Admin</b>
 
